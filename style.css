@@ -5,13 +5,16 @@
 .img-thumbnail {
     width: 6%;
     height: 6%;
+    transition: transform 0.3s
 }
 
 .modalp {
     background-color: rgb(255, 255, 255);
-    margin: 2rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1rem;
     padding: 1rem;
-    border-radius: 1rem;
+    border-radius: 1rem ;
     width: 35%;
     text-align: center;
     justify-content: center;
@@ -21,7 +24,67 @@
 #menu {
     display: flex;
 }
-.Corfirmation{
-    background-color: aqua;
-    border-radius: 25px;
+
+.botonRojo{
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(253, 0, 0, 0.7), 0 0 20px rgb(255, 0, 0),
+        0 0 30px rgb(255, 0, 0);
+}
+
+.botonRojo:hover{
+    transform: scale(1.2);
+}
+
+.botonAzul{
+    
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 183, 255, 0.945), 0 0 20px rgb(0, 174, 255),
+        0 0 30px rgba(0, 174, 255, 0.719);
+}
+.botonAzul:hover{
+    transform: scale(1.2);
+}
+
+.ImagenElemento{
+    display: flex;
+    margin-left: 35%;
+    width: 100px;
+    height: 120px;
+    border: 50px;
+    transition: transform 0.3s
+}
+
+.ImagenElemento:hover{
+    transform: scale(1.2); /* Aumentar el tamaño  un 10% */
+    cursor: pointer
+}
+
+.tablero {
+    display: grid;
+    grid-template-columns: repeat(3, 10rem);
+    grid-template-rows: repeat(3, 10rem);
+    grid-gap: 10px;
+    width: 320px;
+    margin: 1rem;
+    margin-left: 38%;
+}
+
+.casilla {
+    width: 10rem;
+    height: 10rem;
+    background-color: #fff;
+    border: 2px solid #000;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.casilla:hover {
+    background-color: #eee;
+}
+
+.botonDea {
+    margin: 1rem;
 }
