@@ -5,58 +5,86 @@
 .img-thumbnail {
     width: 6%;
     height: 6%;
-    transition: transform 0.3s
+    transition: transform 0.3s;
 }
 
 .modalp {
-    background-color: rgb(255, 255, 255);
+    background: hsla(279, 66%, 37%, 1);
+    background: linear-gradient(
+        90deg,
+        hsla(279, 66%, 37%, 1) 0%,
+        hsla(0, 0%, 0%, 1) 43%
+    );
+    background: -moz-linear-gradient(
+        90deg,
+        hsla(279, 66%, 37%, 1) 0%,
+        hsla(0, 0%, 0%, 1) 43%
+    );
+    background: -webkit-linear-gradient(
+        90deg,
+        hsla(279, 66%, 37%, 1) 0%,
+        hsla(0, 0%, 0%, 1) 43%
+    );
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#72209F", endColorstr="#000000", GradientType=1 );
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 1rem;
+    margin-top: 2rem;
     padding: 1rem;
-    border-radius: 1rem ;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(100, 4, 147, 0.7), 0 0 20px rgba(0, 0, 0, 0.527),
+        0 0 30px rgb(123, 0, 255);
     width: 35%;
+    height: 30rem;
     text-align: center;
     justify-content: center;
     align-items: center;
+    border: purple solid 4px;
 }
 
 #menu {
     display: flex;
 }
 
-.botonRojo{
+#menu2 {
+    display: flex;
+    text-align: center;
+}
+
+.nombrelol {
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(72, 0, 0);
+    padding: 1re;
+}
+
+.botonRojo {
     border-radius: 10px; /* Borde redondeado */
     box-shadow: 0 0 10px rgba(253, 0, 0, 0.7), 0 0 20px rgb(255, 0, 0),
         0 0 30px rgb(255, 0, 0);
 }
 
-.botonRojo:hover{
+.botonRojo:hover {
     transform: scale(1.2);
 }
 
-.botonAzul{
-    
+.botonAzul {
     border-radius: 10px; /* Borde redondeado */
     box-shadow: 0 0 10px rgba(0, 183, 255, 0.945), 0 0 20px rgb(0, 174, 255),
         0 0 30px rgba(0, 174, 255, 0.719);
 }
-.botonAzul:hover{
+.botonAzul:hover {
     transform: scale(1.2);
 }
 
-.ImagenElemento{
-    display: flex;
-    margin-left: 35%;
+.ImagenElemento {
     width: 100px;
     height: 120px;
-    border: 50px;
-    transition: transform 0.3s
+    transition: transform 0.3s;
 }
 
-.ImagenElemento:hover{
-    transform: scale(1.2); /* Aumentar el tamaño  un 10% */
-    cursor: pointer
+.ImagenElemento:hover {
+    transform: scale(1.1); /* Aumentar el tamaño un 10% */
+    cursor: pointer;
 }
 
 .tablero {
@@ -66,7 +94,6 @@
     grid-gap: 10px;
     width: 320px;
     margin: 1rem;
-    margin-left: 38%;
 }
 
 .casilla {
@@ -87,4 +114,46 @@
 
 .botonDea {
     margin: 1rem;
+}
+
+.inmputNamePlayers {
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(116, 0, 131, 0.945), 0 0 20px rgb(97, 0, 84),
+        0 0 30px rgba(172, 0, 252, 0.719);
+    border: purple solid 4px;
+}
+
+.JugadoresTitle {
+    color: rgb(250, 0, 0);
+}
+.Tiempo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    z-index: 1000;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+/* Estilos para el contador */
+.contador {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.finTurnoButon {
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(116, 0, 131, 0.945), 0 0 20px rgb(97, 0, 84),
+        0 0 30px rgba(172, 0, 252, 0.719);
+    border: purple solid 4px;
 }
