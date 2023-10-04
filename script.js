@@ -1,30 +1,25 @@
-const jugador1 = 1 
-const jugador2 = 2 
-const casillas = document.documentById(".casilla");
 let Matriz = [
-    [0, 1, 2],
-    [3, 4, 5],
-    [6, 7, 8]
-  ];
- 
-  casillas.forEach(function(casilla) {
-    casilla.addEventListener("click", function() {
-     
-      
-        console.log("Se hizo clic en la casilla con ID: " + casilla.id);
-    });
+  [0, 1, 2],
+  [3, 4, 5],
+  [6, 7, 8]
+];
+/* POSIBLE CODIGO XD 
+// Obtiene una referencia a los elementos de selección de marcador
+const marcadorO = document.getElementById("marcadorO");
+const marcadorX = document.getElementById("marcadorX");
+
+// Variables para almacenar las selecciones de los jugadores
+let seleccionJugador1 = "";
+let seleccionJugador2 = "";
+
+// Agrega eventos de cambio para los botones de opción
+marcadorO.addEventListener("change", function () {
+    seleccionJugador1 = marcadorO.value;
+    console.log("Jugador 1 seleccionó: " + seleccionJugador1);
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-  let modalJugador1 = document.getElementById("jugador1");
-  modalJugador1.style.display = "block";
+marcadorX.addEventListener("change", function () {
+    seleccionJugador2 = marcadorX.value;
+    console.log("Jugador 2 seleccionó: " + seleccionJugador2);
 });
-
-
-document.getElementById("GuardarNombre1").addEventListener("click", function() {
-  var modalJugador1 = document.getElementById("jugador1");
-  modalJugador1.style.display = "none";  // Oculta el modal del jugador 1
-
-  var modalJugador2 = document.getElementById("jugador2");
-  modalJugador2.style.display = "block";  // Muestra el modal del jugador 2
-});
+ */
