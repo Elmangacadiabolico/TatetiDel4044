@@ -15,3 +15,4 @@ finTurnoBtn.addEventListener("click", function() {
     turno++;
     actualizarContadorTurno();
 });
+module.exports = { turno };

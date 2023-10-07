@@ -108,10 +108,14 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    -webkit-box-shadow: 29px 22px 29px -9px rgba(156,156,156,1);
+-moz-box-shadow: 29px 22px 29px -9px rgba(156,156,156,1);
+box-shadow: 29px 22px 29px -9px rgba(156,156,156,1);
 }
 
 .casilla:hover {
-    background-color: #eee;
+    transform: scale(1.2); /* Aumentar el tamaño  un 10% */
+    cursor: pointer;
 }
 
 .botonDea {
