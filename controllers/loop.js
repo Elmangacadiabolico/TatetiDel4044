@@ -1,6 +1,6 @@
 let matriz = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 const cuadros = document.getElementsByClassName("casilla");
-let running = false; // Inicialmente, la función no está en ejecución
+let running = false; 
 
 async function ActualizarMatriz() {
     for (let i = 0; i < 8; i++) {
@@ -15,18 +15,18 @@ async function ActualizarMatriz() {
     console.log(matriz);
 }
 
-// Agregar un event listener al botón con ID "finTurnoBtn" para iniciar la función
+//se hace un evento al boton
 const miBoton = document.getElementById("finTurnoBtn");
 miBoton.addEventListener("click", async () => {
     if (!running) {
-        running = true; // Iniciar la función
+        running = true; //funca funtion
         while (running) {
             await ActualizarMatriz();
-            await new Promise(resolve => setTimeout(resolve, 100)); // Espera 0.1 segundo
+            await new Promise(resolve => setTimeout(resolve, 1000)); // Espera  mas o menos  0.1 segundo 
         }
     }
 });
 
-// Iniciar la función por primera vez
+
 ActualizarMatriz();
-module.exports = "loop";
+

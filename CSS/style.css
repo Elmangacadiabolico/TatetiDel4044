@@ -89,7 +89,14 @@
     cursor: pointer;
 }
 
+#TableroPepe{
+display:none
+
+}
+
+
 .tablero {
+
     display: grid;
     grid-template-columns: repeat(3, 10rem);
     grid-template-rows: repeat(3, 10rem);
@@ -99,22 +106,40 @@
 }
 
 .casilla {
+
+    display:flex;
     width: 10rem;
     height: 10rem;
-    background-color: #fff;
-    border: 2px solid #000;
+    background-color: #000000;
+    border: 2px solid #fffb00;
     font-size: 24px;
-    display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    -webkit-box-shadow: 29px 22px 29px -9px rgba(156,156,156,1);
--moz-box-shadow: 29px 22px 29px -9px rgba(156,156,156,1);
-box-shadow: 29px 22px 29px -9px rgba(156,156,156,1);
+    margin: 5px; /* Añade un margen para separar las casillas */
+    -webkit-box-shadow: 29px 22px 29px -4px rgb(0, 0, 0);
+    -moz-box-shadow: 29px 22px 29px -9px rgba(156,156,156,1);
+    box-shadow: 0 0 10px rgba(100, 3, 119, 0.945), 0 0 20px rgb(131, 61, 243),
+    0 0 30px rgba(60, 4, 163, 0.719);
+    box-shadow: 29px 22px 29px -4px rgb(255, 223, 78);
 }
 
+.container{
+      display: flex;
+        position: relative;
+        left: 200px;
+}
+
+
+.casilla img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+
 .casilla:hover {
-    transform: scale(1.2); /* Aumentar el tamaño  un 10% */
+    transform: scale(1.1); /* Aumentar el tamaño  un 10% */
     cursor: pointer;
 }
 

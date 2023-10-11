@@ -1,8 +1,8 @@
-// Obtener referencias a elementos del DOM
+
 const contadorTurno = document.getElementById("contadorTurno");
 const finTurnoBtn = document.getElementById("finTurnoBtn");
 
-// Inicializar el contador de turno en 0
+
 let turno = 0;
 
 // Función para actualizar y mostrar el contador de turno
@@ -15,4 +15,3 @@ finTurnoBtn.addEventListener("click", function() {
     turno++;
     actualizarContadorTurno();
 });
-module.exports = { turno };
