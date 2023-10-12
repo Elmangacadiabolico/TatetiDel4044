@@ -3,20 +3,22 @@ const cuadros = document.getElementsByClassName("casilla");
 let running = false; 
 
 async function ActualizarMatriz() {
-    for (let i = 0; i < 8; i++) {
-        if (cuadros[i].innerHTML === "") {
-            matriz[i] = 0;
-        } else if (cuadros[i].innerHTML === "X") {
-            matriz[i] = 1;
-        } else if (cuadros[i].innerHTML === "O") {
-            matriz[i] = 2;
+    for (let i = 0; i < 9; i++) {
+        const casilla = cuadros[i];
+        if (casilla.querySelector(".cruz-image")) {
+            matriz[i] = 1; // Marcado como "X"
+        } else if (casilla.querySelector("img")) {
+            matriz[i] = 2; // Marcado como "O"
+        } else {
+            matriz[i] = 0; // vacio
         }
     }
     console.log(matriz);
 }
 
+
 //se hace un evento al boton
-const miBoton = document.getElementById("finTurnoBtn");
+const miBoton = document.getElementById("jugador2deBTN");
 miBoton.addEventListener("click", async () => {
     if (!running) {
         running = true; //funca funtion
@@ -30,3 +32,6 @@ miBoton.addEventListener("click", async () => {
 
 ActualizarMatriz();
 
+/*
+personas que hicieron este codigo : Emanuel Isa Y  Leandro Rios BAS
+*/

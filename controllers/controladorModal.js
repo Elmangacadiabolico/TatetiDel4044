@@ -31,3 +31,6 @@ document.getElementById("jugador2deBTN").addEventListener("click", function() {
 
 
 
+/*
+personas que hicieron este codigo :  Franco Racca
+*/

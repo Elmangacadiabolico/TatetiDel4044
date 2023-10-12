@@ -26,13 +26,16 @@ function marcarCasillaO(casilla) {
 }
 
 function marcarCasilla(casilla) {
-  if (turnoX) {
-    marcarCasillaX(casilla);
-  } else {
-    marcarCasillaO(casilla);
+  if (!casilla.querySelector('img')) {
+    if (turnoX) {
+      marcarCasillaX(casilla);
+    } else {
+      marcarCasillaO(casilla);
+    }
+    turnoX = !turnoX; // Alternar el turno
   }
-  turnoX = !turnoX; // Alternar el turno
 }
+
 
 casill0.addEventListener("click", function () {
   marcarCasilla(casill0);
@@ -69,3 +72,7 @@ casill7.addEventListener("click", function () {
 casill8.addEventListener("click", function () {
   marcarCasilla(casill8);
 });
+
+/*
+personas que hicieron este codigo : Emanuel Isa, Franco Racca y Leandro Rios BAS
+*/
